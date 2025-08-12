@@ -1,0 +1,136 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#scoreboard {
+  background-color: #ffffff;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark #scoreboard {
+  background-color: #2b2b2b;
+  border-color: #76ff03;
+  color: #eee;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#controls label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 8px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  border: 2px solid #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cell:hover {
+  background-color: #e8f5e9;
+  transform: scale(1.03);
+}
+
+.cell.X {
+  color: #1976d2;
+}
+
+.cell.O {
+  color: #d32f2f;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#reset, #resetScore {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#reset {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#reset:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+#resetScore {
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 12px;
+  padding: 6px 12px;
+  margin-left: 8px;
+}
+
+#resetScore:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.05);
+}

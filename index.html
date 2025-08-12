@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎯 Tic-Tac-Toe Showdown 🔥</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Tic-Tac-Toe Showdown 🔥</h1>
+
+    <div id="scoreboard">
+      🎯 Score — ❌: <span id="scoreX">0</span> &nbsp; ⭕: <span id="scoreO">0</span>
+    </div>
+
+    <div id="controls">
+      <label><input type="checkbox" id="vsAI"> Play vs AI</label>
+      <label>Start with:
+        <select id="startPlayer">
+          <option value="X">❌</option>
+          <option value="O">⭕</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="darkModeToggle"> Dark Mode</label>
+    </div>
+
+    <div id="game"></div>
+
+    <p id="status">Player ❌'s turn</p>
+    <button id="reset"> Reset Game</button>
+    <button id="resetScore"> Reset Scores</button>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
